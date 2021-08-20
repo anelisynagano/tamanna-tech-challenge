@@ -1,20 +1,85 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 .App {
   text-align: center;
 }
 
-.current {
-  border: 1px solid black;
+.sunny {
+  background-image: url("./assets/sunny.jpg");
+}
+.cloudy {
+  background-image: url("./assets/cloudy.jpg");
+}
+.rainy {
+  background-image: url("./assets/rainy.jpg");
+}
+
+.current,
+.cardContainer {
   width: 50%;
   padding: 20px;
   margin: auto;
 }
 
 .forecastCard {
-  border: 1px solid black;
-  width: 10%;
+  width: 20%;
   padding: 20px;
+  margin: 5px;
 }
 
 .cardContainer {
   display: flex;
+  justify-content: center;
+  border-top: 3px solid rgb(58, 58, 58);
+}
+
+img {
+  width: 100%;
+}
+
+.currentTemp {
+  font-size: 10em;
+}
+
+.primarySize {
+  font-size: 35px;
+}
+
+input {
+  background-color: white;
+  padding: 10px;
+}
+
+form {
+  margin: 40px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  border: 1px solid black;
+  width: 80px;
+  right: 20%;
+  top: 7%;
+  position: absolute;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  width: 30px;
+  height: 30px;
+}
+
+.menuIcon {
+  right: 20%;
+  position: absolute;
+  width: 40px;
 }
